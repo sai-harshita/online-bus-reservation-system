@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <span style = "background-color : red ; font-size : 25px"><a href="/index">HOMEPAGE</a></span>
+  <meta charset="UTF-8">
+  <title>ALL BUS SCHEDULE</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="{{url_for('static',filename='style.css')}} ">
+
+  
+</head>
+
+<body>
+
+  <section>
+  <!--for demo wrap-->
+  <h1>BOOKING DATA</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+         
+          <th>BUSNAME</th>
+          <th>TOTEL COLLECTION</th>
+          <th>BOOKED SEATS</th>
+          <th>BOOKING DESTINATION</th>
+		  <th>DATE</th>
+		  
+		  
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+	  
+        <tr>
+          <td>{{name}}</td>
+          <td>{{collection}}</td>
+		  <td>{{b}}</td>
+		  <td>{{date}}</td>
+		  
+		
+		
+		  
+		  
+        </tr>
+	
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!-- follow me template -->
+<div class="made-with-love">
+  Made with
+  <i>♥</i> by
+  <a target="_blank" href="https://codepen.io/nikhil8krishnan">PRIYAM BAJPAI</a>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

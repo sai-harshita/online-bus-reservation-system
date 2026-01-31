@@ -1,0 +1,144 @@
+<link href="{{url_for('static',filename='busesdata.css')}}" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<span style = "background-color : red ; font-size : 25px"><a href="/index">HOMEPAGE</a></span>
+<a href="/admin">BACK</a>
+
+<div class="container">
+            <form method="post" class="form-horizontal" enctype="multipart/form-data" role="form">
+                <h2>BUSES DATA UPDATE</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">BUS NAME</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="busname" placeholder="{{busname1}}" name="busname"class="form-control" autofocus>
+                        <span class="help-block"> </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">NO. OF SEATS</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="seats" placeholder="" name="{{seats1}}" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">TICKET PER SEAT</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="ticket_per_seat" placeholder="{{ticket_per_seat1}}" name="ticket_per_seat" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="date" class="form-control" name="date">
+                    </div>
+					<div class="weekDays-selector">
+  <input type="checkbox" id="mon" name="mon" value="monday" class="weekday" />
+  <label for="mon">M</label>
+  <input type="checkbox" id="tue" name="tue" value="tuesday" class="weekday" />
+  <label for="tue">T</label>
+  <input type="checkbox" id="wed" name="wed" value="wednesday" class="weekday" />
+  <label for="wed">W</label>
+  <input type="checkbox" id="thu" name="thu" value="thursday" class="weekday" />
+  <label for="thu">T</label>
+  <input type="checkbox" id="fri" name="fri" value="friday" class="weekday" />
+  <label for="fri">F</label>
+  <input type="checkbox" id="sat" name="sat" value="saterday" class="weekday" />
+  <label for="sat">S</label>
+ 
+  
+</div>
+                </div>
+                <div class="form-group">
+                    <label for="country" class="col-sm-3 control-label">TO CITY</label>
+                    <div class="col-sm-9">
+                        <select id="city" placeholder="{{city1}}" name="city" class="form-control">
+                            <option>BHOPAL</option>
+                            <option>INDORE</option>
+                            <option>SAGAR</option>
+                            <option>SATNA</option>
+                            <option>RIVA</option>
+                            <option>NAGPUR</option>
+                            <option>CHHATARPUR</option>
+                            <option>PANNA</option>
+                        </select>
+                    </div>
+					
+                        </select>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <label class="control-label col-sm-3">TYPE</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="type" name="type" value="AC">AC
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="type" name="type" value="NON-AC">NON-AC
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="type" name="type" value="CHARTED">CHARTED
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                   
+                            </label>
+                        </div>
+						<div class="control-group">
+  <label class="control-label" for="photo">Photo</label>
+  <div class="controls">
+    <input id="ima" name="ima"  class="input-file" type="file">
+  </div>
+
+                   
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <div class="checkbox">
+						<div class="form-group">
+					<form method="post" action="/busesdata1">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block">UPDATE DATA</button>
+                    
+									{% if added %}
+        <p class="error"><strong>YOUR BUS:</strong> {{added}}
+      {% endif %}</form>
+						
+						</div>
+                            
+                        
+						<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+
+                    </div>
+                </div> <!-- /.form-group -->
+                
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->

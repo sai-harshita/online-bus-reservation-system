@@ -1,0 +1,8 @@
+{
+   "params":
+   { 
+    "local_server":"True",
+    "local_uri":'mysql://root:@localhost/busservis'
+    "prod_uri":mysql://root:@localhost/busservis'
+   }
+}
